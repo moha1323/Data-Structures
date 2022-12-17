@@ -1,0 +1,18 @@
+Title: User Guide
+
+Sub-title: Sorting
+
+Sorting Method 1: Selection Sort
+This algorithm sorts an array by repeatedly finding the minimum element(ascending order) from unsorted part and putting it at the beginning.
+> Coder Talk
+In terms of an array arr, the selection sort finds the smallest entry in the array and exchanges it with arr[0]. 
+Then, ignoring arr[0], the sort finds the next smallest entry and swaps it with arr[1], and so on.
+Notice that we are only using one array. We sort by making the data trade places with one another.
+
+Sorting Method 2: Bubble Sort
+This algorithm is known as the most simplest. The array is traversed from the first element to the last element.
+The current element is compared to the next element. If the current element is greater than the next element, it is swapped.
+
+Sorting Method 3: Merge Sort
+This algorithm divides an array into halves, sorts the two halves, and then merges them into one sorted array.
+This algorithm is mostly used recursively.
