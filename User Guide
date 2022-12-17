@@ -1,0 +1,95 @@
+Data Structures/ADT
+
+ADT 1: Stack
+A stack contains elements of same type arranged in sequential order.
+All operations takes place at a single end that is the top of the stack.
+I created this stack to have the ability to create a chain of linked nodes. 
+Below are the following operations you can perform using stack.
+//Adding
+void push(Object newElement);//adds new top element.
+//Getting
+Object pop();//removes top element and returns the deleted element.
+Object peek();//returns top element (does not remove).
+//Querying
+int size();//returns the size of the stack.
+boolean isEmpty();//True or False question on whether the stack is empty.
+List asList();//converts the stack to a list.
+
+ADT 2: Queue
+A queue contains elements of same type arranged in sequential order.
+Operations takes place at both ends, insertion is done at end and deletion is done at front.
+Below are the following operations you can perform using Queue.
+//Adding
+void enqueue(Object newElement);//add element to back/rear/tail
+//Getting
+Object dequeue();//remove and return (from front/head)
+Object peek();	//return (from front/head)
+//Querying
+int size();//returns the size of the queue.
+boolean isEmpty();//True or False question on whether the queue is empty.
+List asList();//converts the queue to a list.
+//Displaying
+void display();	//displaying all the elements in the queue.
+
+ADT 3: IndexableList
+A list(IndexableList) contains elements of same type arranged in sequential order.
+Below are the following operations you can perform using indexablelist.
+//Accessing
+Object get(int index);//returns the element at the given index.
+void set(int index, Object newElement);//set the element at the given index.
+//Adding
+void add(Object newElement);//Add a new element to the end of the list
+void addAll(List newElements);//Add new elements to end of list (in order received)
+//Removing
+Object remove(int index);//Remove element at index, return element.
+void clear();//Remove all elements
+//Changing Order
+void shuffle();//Randomize order
+void reverse();//Reverse the order
+//Querying
+boolean isEmpty();//True or False question on whether the indexablelist is empty.
+int size();//returns the size of the indexablelist
+List asList();//converts the indexablelist to a list
+int indexOf(Object anElement);//Returns lowest index of matching element (using "equals"), or -1 if no matches
+boolean contains(Object anElement);//Return true if we find match (using "equals")
+IndexableList copyFromTo(int startIndex, int stopIndex);//returns an IndexableList of elements copied between two indexes.
+
+ADT 4: Bag
+A bag is just a container for a group of data items. This ADT has a finite number of objects, not necessarily distinct, 
+in no particular order, and having the same data type.
+Below are the following operations you can perform using bag.
+//Adding
+void add(Object newElement);//add a new element to the bag.
+void addAll(List newElements);//Add new elements to end of list (in order received)
+//Getting
+Object any();//Returns any element (or null for empty case)
+//Removing
+Object remove(Object anElement);//Remove any match (using "equals"), if match is found
+void clear();//Remove all elements
+//Querying
+int size();//returns the size of the bag.
+boolean isEmpty();//True or False question on whether the bag is empty.
+boolean contains(Object anElement);//Return true if we find match (using "equals")
+List asList();//converts the bag to a list
+//Displaying
+void display();//Show all elements using toString (sent to "each" element)
+
+ADT 5: Deque
+A deque is an abbreviation for "double-ended queue". 
+The deque is a data structure that allows adding and removing from both ends.
+Below are the following operations you can perform using deque.
+//Adding
+void addToFront(Object newElement);//front or head
+void addToBack(Object newElement);//back or rear or tail
+//Getting
+Object getFront();//Return object at front.
+Object getBack();//Return object at back.
+//Removing
+Object removeFront();//Remove and return object at front.
+Object removeBack();//Remove and return object at back.
+//Querying
+List asList();//converts the queue to a list.
+int size();//returns the size of the queue.
+boolean isEmpty();//True or False question on whether the deque is empty.
+//Displaying
+void display();	//displaying all the elements in the deque.
