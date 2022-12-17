@@ -1,0 +1,39 @@
+Analysis
+
+prototype (problem #2)
+1. Which key patterns did the prototype handle reasonably well? Which key patterns caused it to
+fail?
+
+> The prototype handled simple sequential and sequential with uniform steps patterns well.
+> The prototype didn't handled sequential with uneven spacing and random patterns well.  
+
+HashLookup – problem #3
+1. How does bucket size impact performance? At what average bucket size do you start to see a
+slowdown in performance?
+
+> The bigger the size the slower the performance.
+> I saw a slowdown in performance with a size of 1,000,000.
+
+2. Complete the following Table
+Note that the keys should be unique and random for these performance measurements.
+Performance of HashLookup Using Unique Random Keys
+[100,000    || 3.833 secs]
+[1,000,000  || 26.308 secs]
+[10,000,000 || 397.76300000000003 secs]
+[1 Billion  || NA]
+[1 Trillian || NA]
+
+3. Based on your table in the previous question, what is Big-O for your HashLookup?
+
+> O(n)
+
+4. What was your solution for handling hash code collisions? Describe another possible solution
+(dream one up).
+
+> I made sure I wasn't looking at null elements/objects.
+
+
+5. When looking for a key and you find a bucket of size > 1, how did you find the value
+corresponding to the key? Any pros/cons of your approach.
+
+> I took the key and went to go find the index that corresponded to that key. (int index = Math.abs(key.hashcode % size))
